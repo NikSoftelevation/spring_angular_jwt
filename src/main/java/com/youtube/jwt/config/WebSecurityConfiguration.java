@@ -42,7 +42,7 @@ public class WebSecurityConfiguration {
                 .cors()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/authenticate")
+                .requestMatchers("/authenticate","registerNewUser")
                 .permitAll()
                 .and()
                 .authorizeHttpRequests()
